@@ -1,0 +1,62 @@
+<ons-page id="timetable-detail">
+
+    <ons-toolbar>
+        <div class="left"><ons-back-button>戻る</ons-back-button></div>
+        <div class="center"></div>
+    </ons-toolbar>
+
+    <form>
+        <ul class="edit-list" style="list-style:none;">
+            <li class="edit-item">
+                <div class="edit-item-name"><i class="fa fa-book edit-icon" aria-hidden="true"></i>科目名</div>
+                <input id="subject" type="text" value="" placeholder="ex...文学Ⅱ">
+            </li>
+            <li class="edit-item">
+                <div class="edit-item-name"><i class="fa fa-user edit-icon" aria-hidden="true"></i>教授名</div>
+                <input id="teacher" type="text" value="" placeholder="ex...福沢諭吉">
+            </li>
+            <li class="edit-item">
+                <div class="edit-item-name"><i class="fa fa-map-marker edit-icon" aria-hidden="true"></i>教室名</div>
+                <input id="room" type="text" value="" placeholder="ex...DB201">
+            </li>
+            <li class="edit-item">
+                <div class="edit-item-name"><i class="fa fa-paint-brush edit-icon" aria-hidden="true"></i>カラー選択</div>
+                <form id="color">
+                    <input name="color" type="radio" value="#b5defd" class="color-input" id="color1">
+                    <label for="color1"></label>
+                    <input name="color" type="radio" value="#b1ecfa" class="color-input" id="color2">
+                    <label for="color2"></label>
+                    <input name="color" type="radio" value="#b0e9e8" class="color-input" id="color3"> 
+                    <label for="color3"></label>
+                    <input name="color" type="radio" value="#c9c9fc" class="color-input" id="color4">
+                    <label for="color4"></label>
+                    <input name="color" type="radio" value="#f7c7f9" class="color-input" id="color5">
+                    <label for="color5"></label>
+                    <input name="color" type="radio" value="#fcc1e9" class="color-input" id="color6">
+                    <label for="color6"></label>
+                    <input name="color" type="radio" value="#ffc2cb" class="color-input" id="color7">
+                    <label for="color7"></label>
+                    <input name="color" type="radio" value="#ffccb3" class="color-input" id="color8">
+                    <label for="color8"></label>
+                    <input name="color" type="radio" value="#fdf1ad" class="color-input" id="color9">
+                    <label for="color9"></label>
+                    <input name="color" type="radio" value="#cfefb0" class="color-input" id="color10">
+                    <label for="color10"></label>
+                    <input name="color" type="radio" value="#bbf6d5" class="color-input" id="color11">
+                    <label for="color11"></label>
+                    <input name="color" type="radio" value="#d2d8de" class="color-input" id="color12">
+                    <label for="color12"></label>
+                </form>
+            </li>
+            <li class="edit-item">
+                <div class="edit-item-name"><i class="fa fa-bookmark edit-icon" aria-hidden="true"></i>メモ</div>
+                <input id="memo" type="text" value="" placeholder="ex...出席あり。5/3休講">
+            </li>
+        </ul>
+    </form>
+
+    <div class="buttons">
+        <ons-button id="pop">保存</ons-button>
+        <ons-button id="remove">クリア</ons-button>
+    </div>
+</ons-page>

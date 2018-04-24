@@ -1,0 +1,17 @@
+<ons-page>
+
+  <ons-carousel swipeable auto-scroll overscrollable>
+    <ons-carousel-item ng-repeat="data in pickupPost" ng-click="onClick($event)" data-id={{data.id}}>
+        <img src={{data['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']}} alt="Onsen UI" style="width: 100%">
+        <p>{{data.title.rendered}}</p>
+    </ons-carousel-item>
+  </ons-carousel>
+
+  <div>{{items[0].name}}</div>
+
+  <div ng-repeat="data in newPost" ng-click="onClick($event)" data-id={{data.id}}>
+    <img src={{data['_embedded']['wp:featuredmedia'][0]['media_details']['sizes']['full']['source_url']}} alt="Onsen UI" style="width: 100%">
+    <p>{{data.title.rendered}}</p>
+  </div>
+  
+</ons-page>
